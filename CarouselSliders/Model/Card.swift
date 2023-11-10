@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+
+
+struct Card: Identifiable, Hashable, Equatable {
+    var id:UUID = .init()
+    var image:String
+    var previousOffset:CGFloat = 0
+}
